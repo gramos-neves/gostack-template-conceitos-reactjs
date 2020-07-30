@@ -22,7 +22,7 @@ describe("App component", () => {
     const { getByText, getByTestId } = render(<App />);
 
     apiMock.onGet("repositories").reply(200, []);
-
+                    
     apiMock.onPost("repositories").reply(200, {
       id: "123",
       url: "https://github.com/josepholiveira",
